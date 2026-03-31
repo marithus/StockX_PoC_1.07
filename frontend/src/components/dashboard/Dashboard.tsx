@@ -5,6 +5,7 @@ import MarketOverview from './MarketOverview';
 import PortfolioSummary from './PortfolioSummary';
 import RecentTrades from './RecentTrades';
 import AISignals from './AISignals';
+import MarketSnapshot from './MarketSnapshot';
 import ScrollAnimation from '../common/ScrollAnimation';
 import HeroSection from './HeroSection';
 import FeatureShowcase from './FeatureShowcase';
@@ -106,6 +107,11 @@ const Dashboard: React.FC = () => {
       {/* Market Highlights */}
       <ScrollAnimation delay={0.2}>
         <MarketHighlights />
+      </ScrollAnimation>
+
+      {/* Market Snapshot */}
+      <ScrollAnimation delay={0.25}>
+        <MarketSnapshot />
       </ScrollAnimation>
 
       {/* Main Content Grid */}
